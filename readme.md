@@ -10,3 +10,9 @@
 Follow two methods:
 1. Procedurally
 2. OOP
+
+
+OOP'S Approach Branch
+
+Screenshot:
+<img src="docs/4ball.png"/>
