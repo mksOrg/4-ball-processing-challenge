@@ -10,3 +10,6 @@
 Follow two methods:
 1. Procedurally
 2. OOP
+
+Screenshot:
+<img src="docs/procedural.png"/>
