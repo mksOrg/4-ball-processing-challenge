@@ -1,6 +1,8 @@
 package models;
 
-public class Ball {
+import processing.core.PApplet;
+
+public class Ball implements Shape {
     private int xCoordinate;
     private int yCoordinate;
     private int diameter;
@@ -13,32 +15,13 @@ public class Ball {
         this.speed = speed * level;
     }
 
-    public int getSpeed() {
-        return speed;
-    }
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-    public int getxCoordinate() {
-        return xCoordinate;
-    }
-    public void setxCoordinate(int xCoordinate) {
-        this.xCoordinate = xCoordinate;
-    }
-    public int getyCoordinate() {
-        return yCoordinate;
-    }
-    public void setyCoordinate(int yCoordinate) {
-        this.yCoordinate = yCoordinate;
-    }
-    public int getDiameter() {
-        return diameter;
-    }
-    public void setDiameter(int diameter) {
-        this.diameter = diameter;
-    }
-    public void moveLeftToRight() {
+    @Override
+    public void move() {
         xCoordinate+=speed;
     }
 
+    @Override
+    public void draw(PApplet pApplet){
+        pApplet.ellipse(xCoordinate, yCoordinate, diameter, diameter);
+    }
 }
